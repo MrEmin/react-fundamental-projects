@@ -1,3 +1,3 @@
 ## Live Sites:
-+ [birthday-buddy](https://birthday-buddy-emin.netlify.app/)
-+ [tours](https://tours-emin.netlify.app/)
++ <a href="https://birthday-buddy-emin.netlify.app/" target="_blank">birthday-buddy</a>
++  <a href="https://tours-emin.netlify.app/" target="_blank">tours</a>
