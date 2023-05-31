@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Tours from './components/Tours'
 import Loading from './components/Loading'
 
-const url = 'https://course-api.com/react-tours-pro'
+const url = 'https://course-api.com/react-tours-project'
 
 const App = () => {
   const [tours, setTours] = useState([])
