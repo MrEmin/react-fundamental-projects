@@ -6,37 +6,27 @@ const App = () => {
   const [index, setIndex] = useState(0)
   const { name, job, image, text } = people[index]
 
-  const checkNumber = (number) => {
-    if (number > people.length - 1) {
-      return 0
-    }
-    if (number < 0) {
-      return people.length - 1
-    }
-    return number
-  }
-
   const nextPerson = () => {
     // index === people.length - 1 ? setIndex(0) : setIndex(index + 1)
     setIndex((currentIndex) => {
-      const newIndex = currentIndex + 1
-      return checkNumber(newIndex)
+      const newIndex = (currentIndex + 1) % people.length
+      return newIndex
     })
   }
   const prevPerson = () => {
     // index === 0 ? setIndex(people.length - 1) : setIndex(index - 1)
     setIndex((currentIndex) => {
-      const newIndex = currentIndex - 1
-      return checkNumber(newIndex)
+      const newIndex = (currentIndex - 1 + people.length) % people.length
+      return newIndex
     })
   }
 
   const randomPerson = () => {
     let randomNumber = Math.floor(Math.random() * people.length)
     if (randomNumber === index) {
-      randomNumber = index + 1
+      randomNumber = (index + 1) % people.length
     }
-    setIndex(checkNumber(randomNumber))
+    return setIndex(randomNumber)
   }
 
   return (
