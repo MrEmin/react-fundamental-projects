@@ -1,8 +1,13 @@
-const Categories = ({ categories }) => {
+const Categories = ({ categories, filterItems }) => {
   return (
     <div className='btn-container'>
       {categories.map((category, index) => (
-        <button key={index} type='button' className='btn'>
+        <button
+          type='button'
+          className='btn'
+          key={index}
+          onClick={() => filterItems(category)}
+        >
           {category}
         </button>
       ))}
