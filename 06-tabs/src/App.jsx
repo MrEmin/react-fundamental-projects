@@ -8,7 +8,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [jobs, setJobs] = useState([])
   const [currentItem, setCurrentItem] = useState(0)
-  console.log(currentItem)
+
   const fetchData = async () => {
     try {
       const response = await fetch(url)
