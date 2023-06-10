@@ -1,7 +1,7 @@
 import Duties from './Duties'
 
-const JobInfo = ({ jobs }) => {
-  const { id, order, title, company, dates, duties } = jobs[0]
+const JobInfo = ({ jobs, currentItem }) => {
+  const { id, order, title, company, dates, duties } = jobs[currentItem]
   return (
     <article className='job-info'>
       <h3>{title}</h3>
