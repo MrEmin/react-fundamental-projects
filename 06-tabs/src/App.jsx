@@ -31,9 +31,11 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h2>Tabs Starter</h2>
-    </div>
+    <section className='jobs-center'>
+      {/* btn container */}
+      {/* job info */}
+      <JobInfo jobs={jobs} />
+    </section>
   )
 }
 export default App
