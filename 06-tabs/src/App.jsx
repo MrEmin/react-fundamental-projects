@@ -1,6 +1,39 @@
-const url = 'https://course-api.com/react-tabs-project';
+import { useEffect, useState } from 'react'
+import JobInfo from './JobInfo'
+
+const url = 'https://course-api.com/react-tabs-project'
 
 const App = () => {
-  return <h2>Tabs Starter</h2>;
-};
-export default App;
+  const [isLoading, setIsLoading] = useState(true)
+  const [jobs, setJobs] = useState([])
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(url)
+      const newJobs = await response.json()
+      setJobs(newJobs)
+      setIsLoading(false)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  if (isLoading) {
+    return (
+      <section className='jobs-center'>
+        <div className='loading'></div>
+      </section>
+    )
+  }
+
+  return (
+    <div>
+      <h2>Tabs Starter</h2>
+    </div>
+  )
+}
+export default App
