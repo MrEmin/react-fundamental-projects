@@ -8,7 +8,8 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setText(data.slice(0, count))
+    let amount = parseInt(count)
+    setText(data.slice(0, amount))
   }
 
   return (
