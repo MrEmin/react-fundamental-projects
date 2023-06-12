@@ -1,9 +1,8 @@
-const SingleColor = ({ color, index }) => {
+const SingleColor = ({ color, index, length }) => {
   const { hex, weight } = color
-  console.log(color)
   return (
     <article
-      className={index > 10 ? 'color-light color' : 'color'}
+      className={index > length ? 'color-light color' : 'color'}
       style={{
         background: `#${hex}`,
       }}
