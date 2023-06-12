@@ -1,36 +1,31 @@
 import { useState } from 'react'
-import Values from 'values.js'
-import ColorList from './ColorList'
-const Form = () => {
-  const [color, setColor] = useState('#ffffff')
 
-  const handleChange = (e) => {
-    setColor(e.target.value)
-  }
-  console.log(color)
+const Form = () => {
+  const [color, setColor] = useState('')
+
   const handleSubmit = (e) => {
     e.preventDefault()
   }
 
-  const colorList = new Values(color).all(10)
-
   return (
-    <div className='container'>
+    <section className='container'>
+      <h4>color generator</h4>
       <form className='color-form' onSubmit={handleSubmit}>
         <input
-          type='color'
-          name=''
-          id=''
+          type='text'
           value={color}
-          onChange={handleChange}
+          onChange={(e) => setColor(e.target.value)}
+          placeholder='#f15025'
         />
-        <input type='text' name='' id='' />
-        <button type='submit' className='btn'>
+        <button
+          type='submit'
+          className='btn'
+          style={{ background: `${color}` }}
+        >
           submit
         </button>
       </form>
-      <ColorList colorList={colorList} />
-    </div>
+    </section>
   )
 }
 export default Form
