@@ -1,9 +1,11 @@
 import { useState } from 'react'
-const Form = () => {
+import Values from 'values.js'
+const Form = ({ setColors }) => {
   const [color, setColor] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setColors(new Values(`${color}`).all(10))
   }
 
   return (
