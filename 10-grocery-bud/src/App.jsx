@@ -13,12 +13,11 @@ const App = () => {
   }
 
   return (
-    <main>
-      <h2>Grocery Bud - Starter</h2>
+    <section className='section-center'>
+      <ToastContainer position='top-center' />
       <Form items={items} setItems={setItems} />
       <Items items={items} removeItem={removeItem} />
-      <ToastContainer position='top-center' />
-    </main>
+    </section>
   )
 }
 

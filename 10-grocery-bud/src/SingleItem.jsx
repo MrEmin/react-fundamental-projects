@@ -4,16 +4,20 @@ const SingleItem = ({ item, removeItem }) => {
   const { name, id, isCompleted } = item
   const [isChecked, setIsChecked] = useState(isCompleted)
   return (
-    <div>
+    <div className='single-item'>
       <input
         style={{ cursor: 'pointer' }}
         type='checkbox'
         onClick={() => setIsChecked(!isChecked)}
       />
-      <h2 style={{ textDecoration: isChecked ? 'none' : 'line-through' }}>
+      <p style={{ textDecoration: isChecked ? 'none' : 'line-through' }}>
         {name}
-      </h2>
-      <button type='button' className='btn' onClick={() => removeItem(id)}>
+      </p>
+      <button
+        type='button'
+        className='remove-btn btn'
+        onClick={() => removeItem(id)}
+      >
         delete
       </button>
     </div>
