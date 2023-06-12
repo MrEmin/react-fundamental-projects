@@ -6,3 +6,5 @@
 +  <a href="https://menu-emin.netlify.app/" target="_blank">menu</a>
 +  <a href="https://tabs-emin.netlify.app/" target="_blank">tabs</a>
 +  <a href="https://slider-emin.netlify.app/" target="_blank">slider</a>
++  <a href="https://lorem-ipsum-emin.netlify.app/" target="_blank">lorem-ipsum</a>
++  <a href="https://color-generator-emin.netlify.app/" target="_blank">color-generator</a>
