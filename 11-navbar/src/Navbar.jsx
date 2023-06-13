@@ -5,8 +5,6 @@ import logo from './logo.svg'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
-
-  const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
 
   const toggleLinks = () => {
@@ -28,11 +26,7 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        <div
-          className='links-container'
-          ref={linksContainerRef}
-          style={linkStyles}
-        >
+        <div className='links-container' style={linkStyles}>
           <ul className='links' ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link
