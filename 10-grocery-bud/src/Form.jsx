@@ -8,11 +8,11 @@ const Form = ({ addItem }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!newItemName) {
-      return toast.error('please enter a value.')
+      toast.error('please provide value.')
+      return
     }
     addItem(newItemName)
     setNewItemName('')
-    toast.success('item added to list')
   }
 
   return (
