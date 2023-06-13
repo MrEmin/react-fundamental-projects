@@ -9,3 +9,4 @@
 +  <a href="https://lorem-ipsum-emin.netlify.app/" target="_blank">lorem-ipsum</a>
 +  <a href="https://color-generator-emin.netlify.app/" target="_blank">color-generator</a>
 +  <a href="https://grocery-bud-emin.netlify.app/" target="_blank">grocery-bud</a>
++  <a href="https://navbar-emin.netlify.app/" target="_blank">navbar</a>
