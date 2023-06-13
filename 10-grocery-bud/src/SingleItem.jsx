@@ -1,16 +1,13 @@
-import { useState } from 'react'
-
-const SingleItem = ({ item, removeItem }) => {
+const SingleItem = ({ item, removeItem, editItem }) => {
   const { name, id, completed } = item
-  const [isChecked, setIsChecked] = useState(completed)
   return (
     <div className='single-item'>
       <input
         type='checkbox'
-        checked={isChecked}
-        onChange={(e) => setIsChecked(!isChecked)}
+        checked={completed}
+        onChange={() => editItem(id)}
       />
-      <p style={{ textDecoration: isChecked && 'line-through' }}>{name}</p>
+      <p style={{ textDecoration: completed && 'line-through' }}>{name}</p>
       <button
         type='button'
         className='remove-btn btn'
