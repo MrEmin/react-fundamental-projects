@@ -5,7 +5,7 @@ import { useGlobalContext } from './context'
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
   return (
-    <aside>
+    <aside className='sidebar'>
       <div className='sidebar-header'>
         <img src={logo} alt='coding addict' />
         <button className='close-btn' onClick={closeSidebar}>
