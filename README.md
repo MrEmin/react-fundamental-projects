@@ -10,3 +10,4 @@
 +  <a href="https://color-generator-emin.netlify.app/" target="_blank">color-generator</a>
 +  <a href="https://grocery-bud-emin.netlify.app/" target="_blank">grocery-bud</a>
 +  <a href="https://navbar-emin.netlify.app/" target="_blank">navbar</a>
++  <a href="https://sidebar-emin.netlify.app/" target="_blank">sidebar</a>
