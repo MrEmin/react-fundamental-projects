@@ -8,8 +8,8 @@ import {
   FaCodiepie,
   FaDocker,
   FaGithubSquare,
-} from 'react-icons/fa';
-import { nanoid } from 'nanoid';
+} from 'react-icons/fa'
+import { nanoid } from 'nanoid'
 
 const sublinks = [
   {
@@ -67,8 +67,8 @@ const sublinks = [
     ],
   },
   {
-    page: 'resources',
     pageId: nanoid(),
+    page: 'resources',
     links: [
       {
         id: nanoid(),
@@ -84,6 +84,6 @@ const sublinks = [
       },
     ],
   },
-];
+]
 
-export default sublinks;
+export default sublinks
