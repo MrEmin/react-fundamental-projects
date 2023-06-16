@@ -1,3 +1,11 @@
+import {
+  CLEAR_ITEMS,
+  REMOVE,
+  INCREASE,
+  DECREASE,
+  LOADING,
+  DISPLAY_ITEMS,
+} from './actions'
 const reducer = (state, action) => {
   return state
 }

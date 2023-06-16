@@ -1,5 +1,13 @@
 import { useContext, useReducer, useEffect, createContext } from 'react'
 import reducer from './reducer'
+import {
+  CLEAR_ITEMS,
+  REMOVE,
+  INCREASE,
+  DECREASE,
+  LOADING,
+  DISPLAY_ITEMS,
+} from './actions'
 
 const AppContext = createContext()
 
