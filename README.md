@@ -12,3 +12,4 @@
 +  <a href="https://navbar-emin.netlify.app/" target="_blank">navbar</a>
 +  <a href="https://sidebar-emin.netlify.app/" target="_blank">sidebar</a>
 +  <a href="https://strapi-emin.netlify.app/" target="_blank">strapi-submenus</a>
++  <a href="https://cart-emin.netlify.app/" target="_blank">cart</a>
